@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using JukeboxService.Service.Abstractions;
+using JBService = JukeboxService.Service.JukeboxService;
 
 namespace JukeboxService
 {
@@ -18,17 +20,19 @@ namespace JukeboxService
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IJukeboxService, JBService>();
             services.AddControllers();
 
             services.AddSwaggerGen(x =>
             {
-                x.SwaggerDoc("v1.0", new OpenApiInfo { Title = "Jukebox Service", Version = "v1.0"});
+                x.SwaggerDoc("v1.0", new OpenApiInfo { Title = "Jukebox Service", Version = "v1.0" });
             });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseSwagger();
+
             app.UseSwaggerUI(x =>
             {
                 x.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Jukebox Service");

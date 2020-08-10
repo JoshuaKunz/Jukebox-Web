@@ -9,16 +9,16 @@ namespace JukeboxService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SongsController : ControllerBase
+    public class ArtistsController : ControllerBase
     {
         private readonly IJukeboxService _service;
 
-        public SongsController(IJukeboxService service)
+        public ArtistsController(IJukeboxService service)
         {
             _service = service ?? throw new ArgumentNullException(nameof(service));
         }
 
         [HttpGet]
-        public async Task<IEnumerable<SongModel>> Get() => await _service.GetAllSongs();
+        public async Task<IEnumerable<ArtistModel>> GetAllArtists() => await _service.GetAllArtists();
     }
 }

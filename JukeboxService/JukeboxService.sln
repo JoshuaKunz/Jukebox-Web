@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JukeboxService", "JukeboxService\JukeboxService.csproj", "{4514B9BA-C1E4-441E-B080-E57328DD5D00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JukeboxService", "JukeboxService\JukeboxService.csproj", "{4514B9BA-C1E4-441E-B080-E57328DD5D00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jukebox.Models", "Jukebox.Models\Jukebox.Models.csproj", "{AFF2AEF8-E29D-4BEB-A6E0-96BE8CD3F31C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4514B9BA-C1E4-441E-B080-E57328DD5D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4514B9BA-C1E4-441E-B080-E57328DD5D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4514B9BA-C1E4-441E-B080-E57328DD5D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF2AEF8-E29D-4BEB-A6E0-96BE8CD3F31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF2AEF8-E29D-4BEB-A6E0-96BE8CD3F31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF2AEF8-E29D-4BEB-A6E0-96BE8CD3F31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF2AEF8-E29D-4BEB-A6E0-96BE8CD3F31C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
